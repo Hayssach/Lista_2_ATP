@@ -2,31 +2,31 @@
 #include <stdlib.h>
 
 int main(){
-	int a, b, c, temp;
+	int i, b, d, temp;
 	printf(" digite o primeiro numero:");
-	scanf ("%d", &a);
+	scanf ("%d", &i);
 	printf(" digite o segundo numero:");
 	scanf ("%d", &b);
 	printf(" digite o terceiro numero:");
-	scanf ("%d", &c);
+	scanf ("%d", &d);
 
     if(a > b){
-    	temp = a;
-    	a = b;
+    	temp = i;
+    	i = b;
     	b = temp;
 	}
-	if(a > c){
-		temp = a;
-		a = c;
-		c = temp;
+	if(a > d){
+		temp = i;
+		i = d;
+		d = temp;
 	}
-	if(b > c){
+	if(b > d){
 		temp = b;
-		b = c;
-		c = temp;
+		b = d;
+		d = temp;
 	}
 	
-	printf(" os numerosem ordem crescente sao : %d, %d, %d\n", a, b, c);
+	printf(" os numerosem ordem crescente sao : %d, %d, %d\n", i, b, d);
 	getchar();
 	return(0);
 }
