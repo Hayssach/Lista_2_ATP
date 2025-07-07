@@ -2,34 +2,34 @@
 #include <stdlib.h>
 
 int main() {
-    // DeclaraÁ„o das vari·veis para os lados do tri‚ngulo
-    float a, b, c;
+    // Declara√ß√£o das vari√°veis para os lados do tri√¢ngulo
+    float i, b, d;
 
-    // Solicita ao usu·rio para inserir os lados do tri‚ngulo
+    // Solicita ao usu√°rio para inserir os lados do tri√¢ngulo
     printf("Digite o comprimento do primeiro lado: ");
-    scanf("%f", &a);
+    scanf("%f", &i);
 
     printf("Digite o comprimento do segundo lado: ");
     scanf("%f", &b);
 
     printf("Digite o comprimento do terceiro lado: ");
-    scanf("%f", &c);
+    scanf("%f", &d);
 
-    // Verifica se os lados formam um tri‚ngulo v·lido
-    if ((a <= 0) || (b <= 0) || (c <= 0) || (a + b <= c) || (a + c <= b) || (b + c <= a)) {
-        printf("Tri‚ngulo inv·lido.\n");
+    // Verifica se os lados formam um tri√¢ngulo v√°lido
+    if ((i <= 0) || (b <= 0) || (d <= 0) || (i + b <= d) || (i + d <= b) || (b + d <= i)) {
+        printf("Tri√¢ngulo inv√°lido.\n");
     }
-    // Verifica se todos os lados s„o iguais (tri‚ngulo equil·tero)
-    else if (a == b && b == c) {
-        printf("Tri‚ngulo equil·tero.\n");
+    // Verifica se todos os lados s√£o iguais (tri√¢ngulo equil√°tero)
+    else if (i == b && b == d) {
+        printf("Tri√¢ngulo equil√°tero.\n");
     }
-    // Verifica se dois lados s„o iguais (tri‚ngulo isÛsceles)
-    else if (a == b || a == c || b == c) {
-        printf("Tri‚ngulo isÛsceles.\n");
+    // Verifica se dois lados s√£o iguais (tri√¢ngulo is√≥sceles)
+    else if (i == b || a == d || b == d) {
+        printf("Tri√¢ngulo is√≥sceles.\n");
     }
-    // Se os trÍs lados s„o diferentes, È um tri‚ngulo escaleno
+    // Se os tr√™s lados s√£o diferentes, √© um tri√¢ngulo escaleno
     else {
-        printf("Tri‚ngulo escaleno.\n");
+        printf("Tri√¢ngulo escaleno.\n");
     }
 
     getchar();
