@@ -2,43 +2,43 @@
 #include <stdlib.h>
 
 int main() {
-    // DeclaraÁ„o das vari·veis para os lados do tri‚ngulo
-    float a, b, c;
+    // Declara√ß√£o das vari√°veis para os lados do tri√¢ngulo
+    float a, g, c;
 
-    // Solicita ao usu·rio para inserir os lados do tri‚ngulo
+    // Solicita ao usu√°rio para inserir os lados do tri√¢ngulo
     printf("Digite o comprimento do primeiro lado: ");
     scanf("%f", &a);
     printf("Digite o comprimento do segundo lado: ");
-    scanf("%f", &b);
+    scanf("%f", &g);
     printf("Digite o comprimento do terceiro lado: ");
     scanf("%f", &c);
 
-    // Verifica se os lados formam um tri‚ngulo v·lido
-    if ((a <= 0) || (b <= 0) || (c <= 0) || (a + b <= c) || (a + c <= b) || (b + c <= a)) {
-        printf("Tri‚ngulo inv·lido.\n");
+    // Verifica se os lados formam um tri√¢ngulo v√°lido
+    if ((a <= 0) || (g <= 0) || (c <= 0) || (a + g <= c) || (a + c <= g) || (g + c <= a)) {
+        printf("Tri√¢ngulo inv√°lido.\n");
     } else {
-        // Verifica se o tri‚ngulo È ret‚ngulo usando o Teorema de Pit·goras
+        // Verifica se o tri√¢ngulo √© ret√¢ngulo usando o Teorema de Pit√°goras
         // Organiza os lados para garantir que a seja o maior lado (hipotenusa)
-        if (a > b && a > c) {
-            // A È a hipotenusa
-            if (a * a == b * b + c * c) {
-                printf("Tri‚ngulo ret‚ngulo.\n");
+        if (a > g && a > c) {
+            // A √© a hipotenusa
+            if (a * a == g * g + c * c) {
+                printf("Tri√¢ngulo ret√¢ngulo.\n");
             } else {
-                printf("Tri‚ngulo n„o È ret‚ngulo.\n");
+                printf("Tri√¢ngulo n√£o √© ret√¢ngulo.\n");
             }
-        } else if (b > a && b > c) {
-            // B È a hipotenusa
-            if (b * b == a * a + c * c) {
-                printf("Tri‚ngulo ret‚ngulo.\n");
+        } else if (g > a && g > c) {
+            // g √© a hipotenusa
+            if (g * g == a * a + c * c) {
+                printf("Tri√¢ngulo ret√¢ngulo.\n");
             } else {
-                printf("Tri‚ngulo n„o È ret‚ngulo.\n");
+                printf("Tri√¢ngulo n√£o √© ret√¢ngulo.\n");
             }
         } else {
-            // C È a hipotenusa
-            if (c * c == a * a + b * b) {
-                printf("Tri‚ngulo ret‚ngulo.\n");
+            // C √© a hipotenusa
+            if (c * c == a * a + g * g) {
+                printf("Tri√¢ngulo ret√¢ngulo.\n");
             } else {
-                printf("Tri‚ngulo n„o È ret‚ngulo.\n");
+                printf("Tri√¢ngulo n√£o √© ret√¢ngulo.\n");
             }
         }
     }
