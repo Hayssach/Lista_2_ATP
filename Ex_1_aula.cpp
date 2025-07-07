@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 int main (){
-	int num;
+	int numero;
 	printf("Digite um numero positivo ou negativo:");
-	scanf("%d", &num);
+	scanf("%d", &numero);
 	
-	if(num >= 0){
+	if(numero >= 0){
 		printf("numero positivo!");
 	}else{
 			printf("numero negativo!");
